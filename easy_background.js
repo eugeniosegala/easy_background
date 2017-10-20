@@ -1,6 +1,18 @@
 function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2) {
 
-  tot_time = a1 + b1 + c1 + d1 + e1;
+
+  function empty_var(x) {
+    if (x) {
+      return x;
+    } else {
+      return 0;
+    }
+  }
+
+
+  tot_time = empty_var(a1) + empty_var(b1) + empty_var(c1) + empty_var(d1) + empty_var(e1);
+
+  console.log(tot_time);
 
 
 
