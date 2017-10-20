@@ -2,4 +2,4 @@
 
 An extremely easy and clear SlideShow Background.
 
-DEMO: http://www.testersite.it/github/easy-background/
+<a target="_blank" href="http://www.testersite.it/github/easy-background/">DEMO HERE</a>
