@@ -25,7 +25,7 @@ function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2) {
 
         document.querySelector(selector).style.backgroundImage = "url('" + a2 + "')";
 
-      }, 0000); // FIRST
+      }, 0000); // 1
     }
 
 
@@ -36,7 +36,7 @@ function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2) {
 
         document.querySelector(selector).style.backgroundImage = "url('" + b2 + "')";
 
-      }, delay); // SECOND
+      }, delay); // 2
     }
 
 
@@ -47,7 +47,7 @@ function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2) {
 
         document.querySelector(selector).style.backgroundImage = "url('" + c2 + "')";
 
-      }, delay); // SECOND
+      }, delay); // 3
     }
 
 
@@ -58,7 +58,7 @@ function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2) {
 
         document.querySelector(selector).style.backgroundImage = "url('" + d2 + "')";
 
-      }, delay); // SECOND
+      }, delay); // 4
     }
 
 
@@ -69,7 +69,7 @@ function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2) {
 
         document.querySelector(selector).style.backgroundImage = "url('" + e2 + "')";
 
-      }, delay); // SECOND
+      }, delay); // 5
     }
 
 
