@@ -2,7 +2,7 @@
 
 An extremely easy and clear SlideShow Background dev in Vanilla JS.
 
-Guide:
+<strong>Guide:</strong>
 
 Just insert:
 
