@@ -1,6 +1,5 @@
-# easybackground
+# easy-background
 
-A SlideShow Background extremely easy and clear.
+An extremely easy and clear SlideShow Background.
 
-
-DEMO: http://www.testersite.it/github/easybackground/
+DEMO: http://www.testersite.it/github/easy-background/
