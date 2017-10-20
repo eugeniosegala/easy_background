@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>easy-background</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+  <style>
+    body {
+
+      border: 2.1vh solid black;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+      background-size: cover;
+      background-position: center center;
+      color: white;
+
+
+    }
+
+
+    body::after {
+
+      content: url("img/1.jpg") url("img/2.jpg") url("img/3.jpg");
+      display: none;
+
+    }
+
+
+    .ct {
+      height: 95.8vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+    }
+
+    .space {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+
+    .lato1 {
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .lato2 {
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .lato3 {
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .lato4 {
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+    }
+
+
+
+    .logo {
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+      opacity: 0.2;
+    }
+
+
+    .logo:hover {
+      opacity: 1!important;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+    }
+  </style>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body>
+
+
+  <div class="container ct">
+
+    <div class="row">
+
+    <h1>easy-background</h1>
+
+    </div>
+
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+  <script>
+
+
+    function slider() {
+
+
+      setTimeout(function() {
+
+        $("body").css("background-image", "url('img/1.jpg')");
+
+      }, 0000); // FIRST
+
+
+      setTimeout(function() {
+
+        $("body").css("background-image", "url('img/2.jpg')");
+
+      }, 3000); // SECOND
+
+
+      setTimeout(function() {
+
+
+        $("body").css("background-image", "url('img/2.jpg')");
+
+
+      }, 6000); // THIRD
+
+
+
+
+      /*
+      SetTimeout(function() {
+
+
+        $("body").css("background-image", "url('img/montaggi.jpg')");
+
+
+      }, 9000); // FOURTH ?
+      */
+
+
+    };
+
+
+
+    slider(); // CALL THE SLIDER
+
+
+    setInterval(function() { // REPEAT
+
+      slider();
+
+    }, 9000);
+
+
+  </script>
+
+
+</body>
+
+</html>
