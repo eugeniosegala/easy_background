@@ -10,6 +10,36 @@ function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2) {
   }
 
 
+
+
+  function empty_img(x) {
+    if (x) {
+      return "<img src='"+ x +"'>";
+    } else {
+      return "";
+    }
+  }
+
+
+
+
+var p = document.createElement("div");
+p.innerHTML = " ";
+p.classList.add("easy_slider");
+
+
+document.body.insertBefore(p, document.body.firstChild);
+
+
+document.querySelector(".easy_slider").innerHTML = empty_img(a2) + empty_img(b2) + empty_img(c2) + empty_img(d2) + empty_img(e2);
+
+
+document.querySelector(".easy_slider").style.display = "none";
+
+
+
+
+
   tot_time = empty_var(a1) + empty_var(b1) + empty_var(c1) + empty_var(d1) + empty_var(e1);
 
   console.log(tot_time);
