@@ -13,7 +13,7 @@ Just insert:
 and call easy_background:
 
 ```
-// FIRST THE CHOSE THE SELECTOR AND AFTER DELAY TIME AND IMAGE OF SINGLE SLIDE
+// FIRST CHOSE THE CONTAINER AND AFTER SET DELAY TIME AND IMAGE OF SINGLE IAMGE
 easy_background("body", 3000, "img/1.jpg", 3000, "img/2.jpg", 3000, "img/3.jpg");
 ```
 
