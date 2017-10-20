@@ -18,4 +18,4 @@ easy_background("body", 3000, "img/1.jpg", 3000, "img/2.jpg", 3000, "img/3.jpg")
 ```
 <br>
 
-<h3>💾💾💾<a href="http://www.testersite.it/github/easy_background/">DEMO HERE</a>💾💾💾</h3>
+<p>💾💾💾 <a href="http://www.testersite.it/github/easy_background/">DEMO HERE</a> 💾💾💾</p>
