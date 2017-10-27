@@ -13,8 +13,18 @@ Just insert:
 and call easy_background:
 
 ```
-// FIRST CHOSE THE CONTAINER AND AFTER SET DELAY TIME AND IMAGE OF SINGLE IAMGE
-easy_background("body", 3000, "img/1.jpg", 3000, "img/2.jpg", 3000, "img/3.jpg");
+// FIRST CHOSE THE CONTAINER (selector) AND AFTER SET DELAY TIME AND IMAGE OF SINGLE IAMGE, IF YOU DON'T SET A DELAY TIME, THE SCRIPT TAKE A DELAY TIME OF 3s.
+
+easy_background("body",
+
+  {
+	i: ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"],
+
+	d: [2000, 2000, 2000, 2000, 2000]
+  }
+
+
+);
 ```
 <br>
 

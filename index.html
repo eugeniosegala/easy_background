@@ -7,24 +7,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
   <meta name="author" content="Eugenio Segala">
+  <meta name="description" content="An extremely easy and clear SlideShow Background dev in Vanilla JS.">
+  <meta name="keywords" content="javascript,background-image,slides,slider,slideshow,gallery,js">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-
   <style>
-
     body {
 
       border: 2.1vh solid black;
-      -webkit-transition: all 0.5s ease-in;
-      -moz-transition: all 0.5s ease-in;
-      -ms-transition: all 0.5s ease-in;
-      -o-transition: all 0.5s ease-in;
-      transition: all 0.5s ease-in;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       color: white;
       height: 100%;
       width: 100%;
@@ -46,24 +38,33 @@
 
 <body>
 
-<a href="https://github.com/Sn01k3r/easy_background"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  <a href="https://github.com/Sn01k3r/easy_background"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 
   <div class="container ct">
 
     <div class="row">
 
-      <h1>easy_background</h1><i style="font-size: 10px;">dev by <a href="https://github.com/Sn01k3r">Sn01k3r</a></i>
+      <h1>easy_background</h1><i style="font-size: 10px;">dev by <a href="https://github.com/eugeniosegala">Yug</a></i>
 
     </div>
 
 
   </div>
 
-<script src="easy_background.js"></script>
+  <script src="easy_background.js"></script>
 
-<script>
-  easy_background("body", 3000, "img/1.jpg", 3000, "img/2.jpg", 3000, "img/3.jpg", 3000, "img/4.jpg", 3000, "img/5.jpg");
-</script>
+  <script>
+    easy_background("body",
+
+      {
+        i: ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"],
+
+        d: [2000, 2000, 2000, 2000, 2000]
+      }
+
+
+    );
+  </script>
 
 
 </body>
