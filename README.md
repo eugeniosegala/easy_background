@@ -23,9 +23,8 @@ easy_background("body",
 	d: [2000, 2000, 2000, 2000, 2000]
   }
 
-
 );
 ```
 <br>
 
-<p>💾💾💾 <a href="http://www.testersite.it/github/easy_background/">DEMO HERE</a> 💾💾💾</p>
+<p>💾💾💾 <a href="http://www.testersite.it/github/easy_background/v3/">DEMO HERE</a> 💾💾💾</p>
