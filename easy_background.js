@@ -1,3 +1,12 @@
+/*!-----------------------------------------------------------------------------
+ * easy_background
+ * v2.0 - built 2017-10-30
+ * Licensed under the MIT License.
+ * http://www.testersite.it/github/easy_background/v3/
+ * ----------------------------------------------------------------------------
+ * Copyright (C) 2017 Eugenio Segala
+ * --------------------------------------------------------------------------*/
+
 function easy_background(selector, sld_args) {
 
 
