@@ -1,6 +1,6 @@
 # easy_background
 
-An extremely easy and clear SlideShow Background dev in Vanilla JS.
+An extremely easy and clear SlideShow Background dev in Vanilla JS..
 
 <strong>Guide:</strong>
 
