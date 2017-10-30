@@ -7,8 +7,8 @@
  * Copyright (C) 2017 Eugenio Segala
  * --------------------------------------------------------------------------*/
 
-function easy_background(selector, sld_args) {
 
+function easy_background(selector, sld_args) {
 
   function empty_img(x) {
     if (x) {
@@ -17,7 +17,6 @@ function easy_background(selector, sld_args) {
       return "";
     }
   }
-
 
   //use object same as arrays in php {nameofindex:variable} inside object you can use arrays [value1,val2] (variable in object can be as array
   //var sld_args={i:["img/555.jpg","img/44.jpg","img/33.jpg","img/22.jpg","img/11.jpg","img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg"],d:[3000,3000,3000,3000,3000] };
@@ -28,7 +27,6 @@ function easy_background(selector, sld_args) {
   var p = document.createElement("div");
   p.innerHTML = " ";
   p.classList.add("easy_slider");
-
 
   document.body.insertBefore(p, document.body.firstChild);
   //switch all values in object -- objectname.index in you case sld_args is object and i is index of array which keep images (i). We use this function for fill div with img tags
@@ -42,7 +40,6 @@ function easy_background(selector, sld_args) {
     }
 
   });
-
 
   //add various style on selector
   document.querySelector(".easy_slider").style.display = "none";
@@ -58,8 +55,6 @@ function easy_background(selector, sld_args) {
   document.querySelector(selector).style.backgroundSize = "cover";
   document.querySelector(selector).style.backgroundRepeat = "no-repeat";
   document.querySelector(selector).style.backgroundPosition = "center center";
-
-
 
   //this n is number of row  in object - if first row one function if more than 1 then other
   var n = 1;
@@ -80,9 +75,9 @@ function easy_background(selector, sld_args) {
         }, delay); // >1
         //collecting delays from curent
         li = li + sld_args.d[iii];
-      }
-      //this function for only  first slide
-      else {
+
+      } else { //this function for only  first slide
+
         //next row
         n++;
         //collect delay first time
@@ -93,23 +88,19 @@ function easy_background(selector, sld_args) {
           document.querySelector(selector).style.backgroundImage = "url('" + vvv + "')";
 
         }, 0000); // 1
-      }
 
+      }
 
     });
 
-
   };
 
-
   slider();
-
 
   setInterval(function() { // REPEAT
 
     slider();
     //here used length of array of delays in object instead you tot_time variable
   }, sld_args.d.length);
-
 
 }
