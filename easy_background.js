@@ -7,7 +7,6 @@
  * Copyright (C) 2017 Eugenio Segala
  * --------------------------------------------------------------------------*/
 
-
 function easy_background(selector, sld_args) {
 
   function empty_img(x) {
