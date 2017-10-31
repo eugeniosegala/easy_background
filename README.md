@@ -20,9 +20,9 @@ and call easy_background:
 easy_background("body",
 
   {
-	i: ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"],
+	slide: ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"],
 
-	d: [2000, 2000, 2000, 2000, 2000]
+	delay: [2000, 2000, 2000, 2000, 2000]
   }
 
 );

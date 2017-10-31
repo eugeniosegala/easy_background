@@ -30,11 +30,11 @@ function easy_background(selector, sld_args) {
   document.body.insertBefore(p, document.body.firstChild);
   //switch all values in object -- objectname.index in you case sld_args is object and i is index of array which keep images (i). We use this function for fill div with img tags
   //and for insert delays into empty or forgotten places in object
-  sld_args.i.forEach(function(v, i) {
+  sld_args.slide.forEach(function(v, i) {
     if (v) {
       document.querySelector(".easy_slider").innerHTML += empty_img(v);
-      if (typeof sld_args.d[i] == 'undefined' || typeof sld_args.d[i] == '' || sld_args.d[i] == 0) {
-        sld_args.d[i] = def_del;
+      if (typeof sld_args.delay[i] == 'undefined' || typeof sld_args.delay[i] == '' || sld_args.delay[i] == 0) {
+        sld_args.delay[i] = def_del;
       }
     }
 
@@ -43,17 +43,22 @@ function easy_background(selector, sld_args) {
   //add various style on selector
   document.querySelector(".easy_slider").style.display = "none";
 
-  //add various style on selector
-  document.querySelector(selector).style.WebkitTransition = "all 0.5s ease-in";
-  document.querySelector(selector).style.MozTransition = "all 0.5s ease-in";
-  document.querySelector(selector).style.MsTransition = "all 0.5s ease-in";
-  document.querySelector(selector).style.OTransition = "all 0.5s ease-in";
-  document.querySelector(selector).style.transition = "all 0.5s ease-in";
 
   //add various style on selector
   document.querySelector(selector).style.backgroundSize = "cover";
   document.querySelector(selector).style.backgroundRepeat = "no-repeat";
   document.querySelector(selector).style.backgroundPosition = "center center";
+
+
+  setTimeout(function() {
+    //add various style on selector
+    document.querySelector(selector).style.WebkitTransition = "all 0.5s ease-in";
+    document.querySelector(selector).style.MozTransition = "all 0.5s ease-in";
+    document.querySelector(selector).style.MsTransition = "all 0.5s ease-in";
+    document.querySelector(selector).style.OTransition = "all 0.5s ease-in";
+    document.querySelector(selector).style.transition = "all 0.5s ease-in";
+  }, 100);
+
 
   //this n is number of row  in object - if first row one function if more than 1 then other
   var n = 1;
@@ -62,7 +67,7 @@ function easy_background(selector, sld_args) {
 
   function slider() {
     //switching all images one by one
-    sld_args.i.forEach(function(vvv, iii) {
+    sld_args.slide.forEach(function(vvv, iii) {
       //here go all slides except first
       if (n > 1) {
         //set delay from collected number from previous slides
@@ -73,14 +78,14 @@ function easy_background(selector, sld_args) {
 
         }, delay); // >1
         //collecting delays from curent
-        li = li + sld_args.d[iii];
+        li = li + sld_args.delay[iii];
 
       } else { //this function for only  first slide
 
         //next row
         n++;
         //collect delay first time
-        li = sld_args.d[iii];
+        li = sld_args.delay[iii];
 
         setTimeout(function() {
 
@@ -100,6 +105,6 @@ function easy_background(selector, sld_args) {
 
     slider();
     //here used length of array of delays in object instead you tot_time variable
-  }, sld_args.d.length);
+  }, sld_args.delay.length);
 
 }
