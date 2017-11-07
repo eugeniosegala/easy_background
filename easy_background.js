@@ -87,11 +87,7 @@ function easy_background(selector, sld_args) {
         //collect delay first time
         li = sld_args.delay[iii];
 
-        setTimeout(function() {
-
-          document.querySelector(selector).style.backgroundImage = "url('" + vvv + "')";
-
-        }, 0000); // 1
+        document.querySelector(selector).style.backgroundImage = "url('" + vvv + "')";
 
       }
 
