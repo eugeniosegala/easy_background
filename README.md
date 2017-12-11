@@ -2,6 +2,8 @@
 
 An extremely lightwell, easy and clear SlideShow Background dev in Vanilla JS.
 
+This script can be used as a digital advertising spot. Images pass on the screen at defined intervals.
+
 <strong>Guide:</strong>
 
 Just insert:
