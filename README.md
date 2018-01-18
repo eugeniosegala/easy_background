@@ -2,7 +2,7 @@
 
 An extremely lightwell, easy and clear SlideShow Background dev in Vanilla JS.
 
-This script can be used as a digital advertising spot. Images pass on the screen at defined intervals.
+This script can be used as a digital advertising spot (images pass on the screen at defined intervals).
 
 <strong>Guide:</strong>
 
@@ -17,7 +17,7 @@ and call easy_background:
 ```
 
 // FIRST CHOOSE THE CONTAINER (selector), AFTER SET THE IMAGE AND THEN THE DELAY TIME.
-// IF YOU DON'T SET A DELAY TIME, THE SCRIPT TAKE A DELAY TIME OF 3s.
+// DEFAULT DELAY: 3s.
 
 easy_background("body",
 
