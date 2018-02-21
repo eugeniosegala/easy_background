@@ -52,10 +52,13 @@ function easy_background(selector, sld_args) {
 
   setTimeout(function() {
     //add various style on selector
-    if (typeof sld_args.effect === 'undefined') {
-      sld_args.effect = "ease-in";
+    if (typeof sld_args.transition_timing === 'undefined') {
+      sld_args.transition_timing = "ease-in";
     }
-    var transition = "all 0.5s " + sld_args.effect;
+    if (typeof sld_args.transition_duration === 'undefined') {
+      sld_args.transition_duration = 500;
+    }
+    var transition = "all " + sld_args.transition_duration + 'ms ' + sld_args.transition_timing;
     document.querySelector(selector).style.WebkitTransition = transition;
     document.querySelector(selector).style.MozTransition = transition;
     document.querySelector(selector).style.MsTransition = transition;
