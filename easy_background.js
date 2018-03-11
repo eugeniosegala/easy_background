@@ -52,11 +52,18 @@ function easy_background(selector, sld_args) {
 
   setTimeout(function() {
     //add various style on selector
-    document.querySelector(selector).style.WebkitTransition = "all 0.5s ease-in";
-    document.querySelector(selector).style.MozTransition = "all 0.5s ease-in";
-    document.querySelector(selector).style.MsTransition = "all 0.5s ease-in";
-    document.querySelector(selector).style.OTransition = "all 0.5s ease-in";
-    document.querySelector(selector).style.transition = "all 0.5s ease-in";
+    if (typeof sld_args.transition_timing === 'undefined') {
+      sld_args.transition_timing = "ease-in";
+    }
+    if (typeof sld_args.transition_duration === 'undefined') {
+      sld_args.transition_duration = 500;
+    }
+    var transition = "all " + sld_args.transition_duration + 'ms ' + sld_args.transition_timing;
+    document.querySelector(selector).style.WebkitTransition = transition;
+    document.querySelector(selector).style.MozTransition = transition;
+    document.querySelector(selector).style.MsTransition = transition;
+    document.querySelector(selector).style.OTransition = transition;
+    document.querySelector(selector).style.transition = transition;
   }, 100);
 
 
