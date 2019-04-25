@@ -31,7 +31,7 @@ easy_background("body",
 ```
 <br>
 
-<p>💾💾💾 <a href="http://www.testersite.it/github/easy_background/v3/">DEMO HERE</a> 💾💾💾</p>
+<p><a href="http://www.testersite.it/github/easy_background/v3/">DEMO HERE</a></p>
 
 <br>
 
