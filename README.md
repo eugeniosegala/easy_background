@@ -33,8 +33,6 @@ easy_background("body",
 
 <p><a href="https://loving-meitner-bdea65.netlify.app/">DEMO HERE</a></p>
 
-<br>
-
 # MIT License
 
 Copyright (c) 2017 Eugenio Segala
